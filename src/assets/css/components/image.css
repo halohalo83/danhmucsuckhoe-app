@@ -3,80 +3,13 @@
   width: 316px;
   height: 54px;
 }
-.frame-1 {
-  background-image: url(../../img/Frame-1.png);
-  width: 294px;
-  height: 455px;
-  opacity: 0.3;
-  z-index: 1;
-}
-.frame {
-  background-image: url(../../img/Frame.png);
-  width: 1100px;
-  height: 455px;
-}
-.ellipse144 {
-  background-image: url(../../img/Ellipse144.png);
-}
-.group33442 {
-  background-image: url(../../img/Group33442.png);
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  position: absolute;
-  left: 998px;
-  top: 207px;
-}
-.group33443 {
-  background-image: url(../../img/Group33443.png);
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  background-color: transparent;
-}
-.group33444 {
-  background-image: url(../../img/Group33444.png);
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color: transparent;
-}
-.group33445 {
-  background-image: url(../../img/Group33445.png);
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color: transparent;
-  left: 973px;
-  top: 327px;
-}
-.image85 {
-  background-image: url(../../img/image85.png);
-}
-.maskgroup {
-  background-image: url(../../img/MaskGroup.png);
-}
-.maskgroup-1 {
-  background-image: url(../../img/MaskGroup-1.png);
-  width: 309.99px;
-  height: 309.87px;
-  background-color: transparent;
-  position: absolute;
-  left: 1179px;
-  top: 89px;
-  z-index: 0;
-}
-.rectangle962 {
-  background-image: url(../../img/Rectangle962.png);
-  width: 918px;
-  height: 455px;
-  background: linear-gradient(
-    90.25deg,
-    #fafafa 30.43%,
-    rgba(250, 250, 250, 0) 111.75%
-  );
-  position: absolute;
-}
-.vector69 {
-  background-image: url(../../img/Vector69.png);
+
+.group33499 {
+  background-image: url(../../img/group33499.png);
+  width: 1921px;
+  height: 515px;
+  /* position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 80px; */
 }
