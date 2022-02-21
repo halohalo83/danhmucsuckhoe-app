@@ -1,40 +1,46 @@
 /* header  */
 header {
-  height: 136px;
+  padding: 20px;
   z-index: 1;
 }
 
+header>* {
+  margin: 4px;
+}
+
 .header-picture {
-  justify-content: right;
   align-items: center;
+  margin: 20px !important;
 }
-.header-menu {
-  justify-content: center;
-  align-items: center;
-  flex-basis: 30%;
-}
-.header-menu span {
-  margin: 0px 16px;
-}
-.header-menu .menu-danhmuc {
+
+.menu-danhmuc {
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  text-align: center;
 }
+
+.menu-danhmuc:hover {
+  color: #ee0033;
+}
+
 .header-button {
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  padding: 24px;
 }
+
 /* main  */
 main {
-  height: calc(100% - 136px - 482px);
+  /* height: calc(100% - 136px - 482px); */
 }
+
 main .banner {
-  background-color: aqua;
   height: 455px;
   z-index: 0;
 }
+
 main .banner-title {
   position: absolute;
   font-style: normal;
@@ -46,9 +52,11 @@ main .banner-title {
   background: transparent;
   text-align: center;
 }
-main .banner-title > * {
+
+main .banner-title>* {
   background: transparent;
 }
+
 main .banner-title b {
   background: transparent;
   color: #ee0033;
@@ -56,13 +64,13 @@ main .banner-title b {
   line-height: 72.61px;
   font-weight: 700px;
 }
+
 main .service-menu {
-  background-color: blue;
   z-index: 1;
-  height: 418px;
+  /* height: 418px; */
 }
+
 /* footer  */
 footer {
-  background-color: blue;
-  height: 482px;
+  /* height: 482px; */
 }
