@@ -1,6 +1,7 @@
 /* header  */
 header {
   height: 136px;
+  z-index: 1;
 }
 
 .header-picture {
@@ -27,8 +28,38 @@ header {
 }
 /* main  */
 main {
-  background-color: green;
   height: calc(100% - 136px - 482px);
+}
+main .banner {
+  background-color: aqua;
+  height: 455px;
+  z-index: 0;
+}
+main .banner-title {
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 53px;
+  line-height: 64px;
+  left: 394px;
+  top: 260px;
+  background: transparent;
+  text-align: center;
+}
+main .banner-title > * {
+  background: transparent;
+}
+main .banner-title b {
+  background: transparent;
+  color: #ee0033;
+  font-size: 60px;
+  line-height: 72.61px;
+  font-weight: 700px;
+}
+main .service-menu {
+  background-color: blue;
+  z-index: 1;
+  height: 418px;
 }
 /* footer  */
 footer {
