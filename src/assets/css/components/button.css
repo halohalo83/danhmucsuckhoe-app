@@ -1,0 +1,18 @@
+.btn {
+  border: 1px solid #333333;
+  margin: 0px 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: Google Sans;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.btn-dangnhap {
+  background-color: #EE0033;
+  color: #ffffff;
+  border: none;
+}
+.btn-dangnhap:hover {
+  color: #ffffff;
+}

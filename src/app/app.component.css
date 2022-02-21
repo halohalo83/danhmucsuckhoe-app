@@ -1,0 +1,37 @@
+/* header  */
+header {
+  height: 136px;
+}
+
+.header-picture {
+  justify-content: right;
+  align-items: center;
+}
+.header-menu {
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30%;
+}
+.header-menu span {
+  margin: 0px 16px;
+}
+.header-menu .menu-danhmuc {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.header-button {
+  justify-content: left;
+  align-items: center;
+}
+/* main  */
+main {
+  background-color: green;
+  height: calc(100% - 136px - 482px);
+}
+/* footer  */
+footer {
+  background-color: blue;
+  height: 482px;
+}
