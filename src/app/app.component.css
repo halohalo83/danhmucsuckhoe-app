@@ -64,14 +64,20 @@ main .howitwork > * {
   background-color: #f8f8f8;
   z-index: -1;
 }
-
+.service-menu {
+  margin-bottom: 30px;
+}
 .service-menu-title,
 .howitwork-title {
-  padding: 60px 0px;
+  padding: 60px 0px 30px 0px;
   text-align: center;
   font-size: 32px;
   line-height: 60px;
   font-weight: bold;
+}
+.service-menu img {
+  width: 170px;
+  height: 170px;
 }
 .howitwork-banner > * {
   margin: 8px 16px;
@@ -141,6 +147,7 @@ main .howitwork > * {
   font-size: 16px;
   line-height: 19.36px;
   padding: 18px 0px;
+  border: none;
 }
 
 .anhtuvan .asia-girl {

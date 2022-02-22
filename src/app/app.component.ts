@@ -19,5 +19,19 @@ export class AppComponent {
     { img: '../assets/img/positive-girl-dentist-4.png' },
     { img: '../assets/img/positive-girl-dentist-5.png' },
   ];
-  slideConfig = { slidesToShow: 4, slidesToScroll: 4 };
+  slideConfig = {
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 567,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      }
+    ]
+  };
 }

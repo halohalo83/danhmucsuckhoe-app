@@ -42,9 +42,11 @@
   <!-- DANH MỤC DỊCH VỤ -->
   <div class="service-menu container-fluid">
     <div class="service-menu-title">DANH MỤC DỊCH VỤ</div>
-    <div class="service-menu-slide row">
+    <div
+      class="service-menu-slide row justify-content-center align-items-center"
+    >
       <ngx-slick-carousel
-        class="carousel"
+        class="carousel col-sm-5"
         #slickModal="slick-carousel"
         [config]="slideConfig"
         ><div ngxSlickItem *ngFor="let slide of slides" class="slide">
@@ -64,8 +66,8 @@
     >
       <img src="../assets/img/xetduyet.png" class="banner" />
       <img src="../assets/img/chia.png" class="banner" />
-      <img src="../assets/img/phanqua.png" class="banner" />
       <img src="../assets/img/trasau.png" class="banner" />
+      <img src="../assets/img/phanqua.png" class="banner" />
     </div>
     <div
       class="how-it-work-button row container-fluid justify-content-center align-items-center"
