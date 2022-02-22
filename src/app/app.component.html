@@ -12,15 +12,15 @@
         <img src="../assets/img/Frame51.png" />
       </picture>
     </div>
-    <div class="menu-danhmuc col-sm-auto">Danh mục</div>
+    <div class="service-menu col-sm-auto">Danh mục</div>
     <span class="dot"></span>
-    <div class="menu-danhmuc col-sm-auto">Nhà cung cấp</div>
+    <div class="service-menu col-sm-auto">Nhà cung cấp</div>
     <span class="dot"></span>
-    <div class="menu-danhmuc col-sm-auto">Về chúng tôi</div>
+    <div class="service-menu col-sm-auto">Về chúng tôi</div>
     <span class="dot"></span>
-    <div class="menu-danhmuc col-sm-auto">Tin tức</div>
+    <div class="service-menu col-sm-auto">Tin tức</div>
     <span class="dot"></span>
-    <div class="menu-danhmuc col-sm-auto">Tuyển dụng</div>
+    <div class="service-menu col-sm-auto">Tuyển dụng</div>
     <div class="header-button col-sm-2 d-flex">
       <a href="#" class="btn btn-dangky">Đăng ký</a>
       <a href="#" class="btn btn-dangnhap">Đăng nhập</a>
@@ -46,7 +46,7 @@
       class="service-menu-slide row justify-content-center align-items-center"
     >
       <ngx-slick-carousel
-        class="carousel col-sm-5"
+        class="carousel col-sm-7"
         #slickModal="slick-carousel"
         [config]="slideConfig"
         ><div ngxSlickItem *ngFor="let slide of slides" class="slide">
@@ -55,19 +55,19 @@
     </div>
   </div>
   <!-- CÁCH THỨC HOẠT ĐỘNG  -->
-  <div class="howitwork">
+  <div class="how-it-work">
     <div
-      class="howitwork-title row container-fluid justify-content-center align-items-center"
+      class="how-it-work-title row container-fluid justify-content-center align-items-center"
     >
       CÁCH THỨC HOẠT ĐỘNG
     </div>
     <div
-      class="howitwork-banner row container-fluid justify-content-center align-items-center"
+      class="how-it-work-banner row container-fluid justify-content-center align-items-center"
     >
-      <img src="../assets/img/xetduyet.png" class="banner" />
-      <img src="../assets/img/chia.png" class="banner" />
-      <img src="../assets/img/trasau.png" class="banner" />
-      <img src="../assets/img/phanqua.png" class="banner" />
+      <img src="../assets/img/Xetduyet.png" class="banner" />
+      <img src="../assets/img/Chia.png" class="banner" />
+      <img src="../assets/img/Trasau.png" class="banner" />
+      <img src="../assets/img/Phanqua.png" class="banner" />
     </div>
     <div
       class="how-it-work-button row container-fluid justify-content-center align-items-center"
@@ -77,9 +77,9 @@
   </div>
   <!-- THÔNG TIN TƯ VẤN -->
   <div
-    class="banner-tuvan row container-fluid justify-content-center align-items-center"
+    class="advise-banner row container-fluid justify-content-center align-items-center"
   >
-    <div class="thongtintuvan col-sm-4">
+    <div class="advise-info col-sm-4">
       <div class="title row justify-content-center align-items-center">
         <b
           >Chăm sóc sức khỏe, sắc đẹp <br />
@@ -108,10 +108,25 @@
         <a href="" class="btn col-sm-12">NHẬN TƯ VẤN NGAY</a>
       </div>
     </div>
-    <div class="anhtuvan col-sm-4"></div>
+    <div class="advise-photo col-sm-4">
+      <picture class="asia-girl">
+        <source
+          media="(max-width: 567px)"
+          srcset= "none"
+        />
+        <img src="../assets/img/asia-girl.png" />
+      </picture>
+      <picture class="chain">
+        <source
+          media="(max-width: 567px)"
+          srcset= "none"
+        />
+        <img src="../assets/img/xich.png" />
+      </picture>
+    </div>
   </div>
   <!-- HỆ SINH THÁI -->
-  <div class="hesinhthai d-flex row justify-content-center align-items-center">
+  <div class="eco d-flex row justify-content-center align-items-center">
     <picture>
       <source
         media="(max-width: 567px)"
@@ -137,7 +152,7 @@
     <div class="col-sm-7"></div>
   </div>
   <!-- THÔNG TIN LIÊN HỆ -->
-  <div class="thongtinlienhe row justify-content-center">
+  <div class="contact-info row justify-content-center">
     <div class="col-sm-2 ps-0">
       <a href="#" class="row col-sm-auto mb-2">Khách hàng</a>
       <a href="#" class="row col-sm-auto mb-2">Đối tác Heno</a>
@@ -153,7 +168,7 @@
       >
       <a href="#" class="btn row col-sm-auto mb-2">Tham gia cùng chúng tôi</a>
     </div>
-    <div class="col-sm-2 ps-0">
+    <div class="support col-sm-2 ps-0">
       <div class="row col-sm-auto mb-2">
         <span><img src="../assets/img/mail.svg" /></span> <b>Hỗ trợ bán hàng</b>
       </div>
@@ -163,8 +178,8 @@
         <b>Hỗ trợ nhà cung cấp</b>
       </div>
     </div>
-    <div class="thongtincongty col-sm-3">
-      <div class="tencongty row mb-2 row">
+    <div class="company-info col-sm-3">
+      <div class="company-name row mb-2 row">
         <b class="row col-sm-auto">CÔNG TY CỔ PHẦN CÔNG NGHỆ HEALTHCARE NOW</b>
       </div>
       <div class="mb-2 d-flex">
@@ -179,7 +194,7 @@
     </div>
   </div>
   <!-- MẠNG XÃ HỘI VÀ ĐĂNG KÝ BẢN QUYỀN  -->
-  <div class="mangxahoi row justify-content-center align-items-center">
+  <div class="social row justify-content-center align-items-center">
     <div
       class="icon-box col-sm-2 p-0 row justify-content-center align-items-center"
     >
@@ -189,7 +204,7 @@
       <a href="#"><img src="../assets/img/Instagram.png" /></a>
     </div>
     <div class="col-sm-4"></div>
-    <div class="thongtinbanquyen col-sm-3">
+    <div class="license col-sm-3">
       Copyright 2021 Healthcare Now | Đã đăng ký bản quyền
     </div>
   </div>

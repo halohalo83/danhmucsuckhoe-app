@@ -8,7 +8,7 @@ header {
   align-items: center;
 }
 
-.menu-danhmuc {
+header .service-menu {
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
@@ -18,7 +18,7 @@ header {
   padding-bottom: 8px;
 }
 
-.menu-danhmuc:hover {
+header .service-menu:hover {
   color: #ee0033;
 }
 
@@ -46,7 +46,7 @@ main .banner-title {
   text-align: center;
 }
 
-main .banner-title > * {
+main .banner-title>* {
   background: transparent;
 }
 
@@ -57,37 +57,43 @@ main .banner-title b {
   line-height: 72.61px;
   font-weight: 700px;
 }
-main .howitwork > * {
+
+main .how-it-work>* {
   padding-top: 16px;
   padding-bottom: 16px;
   margin: 0;
   background-color: #f8f8f8;
   z-index: -1;
 }
-.service-menu {
+
+main .service-menu {
   margin-bottom: 30px;
 }
-.service-menu-title,
-.howitwork-title {
+
+main .service-menu-title,
+.how-it-work-title {
   padding: 60px 0px 30px 0px;
   text-align: center;
   font-size: 32px;
   line-height: 60px;
   font-weight: bold;
 }
-.service-menu img {
-  width: 170px;
-  height: 170px;
+
+main .service-menu img {
+  padding: 0px 8px;
 }
-.howitwork-banner > * {
+
+.how-it-work-banner>* {
   margin: 8px 16px;
 
   cursor: pointer;
 }
-.howitwork-banner img:hover {
+
+.how-it-work-banner img:hover {
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.15);
 }
-.howitwork .btn {
+
+.how-it-work .btn {
   padding: 16px 49px;
   margin-bottom: 47px;
   font-size: 16px;
@@ -95,23 +101,27 @@ main .howitwork > * {
   line-height: 19px;
   text-decoration: #fff5f5;
 }
-.banner-tuvan {
+
+.advise-banner {
   position: relative;
   padding-top: 48px;
   background-color: #bf1d24;
   margin: 0;
 }
-.thongtintuvan > * {
+
+.advise-info>* {
   background-color: #bf1d24;
 }
-.thongtintuvan .title {
+
+.advise-info .title {
   color: #ffffff;
   font-weight: normal;
   font-size: 24px;
   line-height: 44px;
   text-align: center;
 }
-.thongtintuvan .title > b {
+
+.advise-info .title>b {
   background-color: #bf1d24;
   text-align: center;
   color: #ffffff;
@@ -120,25 +130,31 @@ main .howitwork > * {
   line-height: 42px;
   border: none;
 }
-.thongtintuvan .input-box {
+
+.advise-info .input-box {
   padding-top: 32px;
 }
-.thongtintuvan .input-box .input-col {
+
+.advise-info .input-box .input-col {
   background-color: #bf1d24;
 }
-.thongtintuvan .input-box input {
+
+.advise-info .input-box input {
   margin: 10px;
   padding: 16px 16px;
   background-color: #ffffff;
   border: #ffffff;
 }
-.thongtintuvan .btn-box {
+
+.advise-info .btn-box {
   padding: 0px 44px;
 }
-.thongtintuvan .input-box input:focus-visible {
+
+.advise-info .input-box input:focus-visible {
   outline: none;
 }
-.thongtintuvan a {
+
+.advise-info a {
   margin-top: 16px;
   margin-bottom: 97px;
   max-width: 537px;
@@ -150,9 +166,26 @@ main .howitwork > * {
   border: none;
 }
 
-.anhtuvan .asia-girl {
-  background: transparent url(../assets/img/asia-girl.png) no-repeat center;
-  height: 300px;
+.advise-photo {
+  background: transparent;
+}
+
+.advise-photo img {
+  background: transparent;
+}
+.advise-photo .asia-girl {
+  background: transparent;
+  position: absolute;
+  top: -390px;
+  left: -120px;
+  z-index: 2;
+}
+.advise-photo .chain {
+  background: transparent;
+  position: absolute;
+  top: -375px;
+  right: -330px;
+  z-index: 1;
 }
 /* footer  */
 footer {
@@ -160,34 +193,50 @@ footer {
   padding-bottom: 32px;
   font-size: 16px;
 }
+
 footer a {
   color: #333333;
 }
-.thongtinlienhe {
+
+.contact-info {
   font-weight: bold;
 }
-.thongtinlienhe .btn {
+
+.contact-info .btn {
   padding: 12px 8px;
-  margin: 16px 8px;
+  margin: 16px 12px;
   width: auto;
 }
-.thongtinlienhe .btn:hover {
+
+.contact-info .btn:hover {
   color: #ffffff;
 }
-.thongtinlienhe span {
+
+.contact-info span {
   margin: 0px 8px;
 }
-.thongtinlienhe .tencongty {
+
+.contact-info .company-name {
   color: #ee0033;
   margin-left: 8px;
 }
-
-.mangxahoi {
+.contact-info a {
+  margin-left: 2px;
+}
+.company-info {
+  margin-left: 8px;
+}
+.support {
+  margin-left: 8px;
+}
+.social {
   margin-top: 60px;
 }
-.mangxahoi a {
+
+.social a {
   margin-right: 32px;
 }
-.thongtinbanquyen {
+
+.license {
   margin: 16px 8px;
 }
