@@ -67,7 +67,7 @@ main .howitwork > * {
 
 .service-menu-title,
 .howitwork-title {
-  padding-top: 60px !important;
+  padding: 60px 0px;
   text-align: center;
   font-size: 32px;
   line-height: 60px;
@@ -151,6 +151,7 @@ main .howitwork > * {
 footer {
   padding-top: 41px;
   padding-bottom: 32px;
+  font-size: 16px;
 }
 footer a {
   color: #333333;
@@ -160,19 +161,26 @@ footer a {
 }
 .thongtinlienhe .btn {
   padding: 12px 8px;
+  margin: 16px 8px;
+  width: auto;
 }
 .thongtinlienhe .btn:hover {
   color: #ffffff;
 }
+.thongtinlienhe span {
+  margin: 0px 8px;
+}
 .thongtinlienhe .tencongty {
   color: #ee0033;
+  margin-left: 8px;
 }
+
 .mangxahoi {
-  margin-top: 74px;
+  margin-top: 60px;
 }
 .mangxahoi a {
   margin-right: 32px;
 }
 .thongtinbanquyen {
-  right: 0;
+  margin: 16px 8px;
 }

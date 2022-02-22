@@ -42,6 +42,15 @@
   <!-- DANH MỤC DỊCH VỤ -->
   <div class="service-menu container-fluid">
     <div class="service-menu-title">DANH MỤC DỊCH VỤ</div>
+    <div class="service-menu-slide row">
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+        ><div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.img }}" alt="" width="100%" /></div
+      ></ngx-slick-carousel>
+    </div>
   </div>
   <!-- CÁCH THỨC HOẠT ĐỘNG  -->
   <div class="howitwork">
@@ -128,40 +137,51 @@
   <!-- THÔNG TIN LIÊN HỆ -->
   <div class="thongtinlienhe row justify-content-center">
     <div class="col-sm-2 ps-0">
-      <a href="#" class="mb-2 row">Khách hàng</a>
-      <a href="#" class="mb-2 row">Đối tác Heno</a>
-      <a href="#" class="mb-2 row">Chính sách quyền riêng tư</a>
-      <a href="#" class="mb-2 row">Về chúng tôi</a>
-      <a href="#" class="mb-2 row">Liên hệ và hỗ trợ</a>
-      <a href="#" class="mb-2 row">Điều kiện & Điều khoản</a>
+      <a href="#" class="row col-sm-auto mb-2">Khách hàng</a>
+      <a href="#" class="row col-sm-auto mb-2">Đối tác Heno</a>
+      <a href="#" class="row col-sm-auto mb-2">Chính sách quyền riêng tư</a>
+      <a href="#" class="row col-sm-auto mb-2">Về chúng tôi</a>
+      <a href="#" class="row col-sm-auto mb-2">Liên hệ và hỗ trợ</a>
+      <a href="#" class="row col-sm-auto mb-2">Điều kiện & Điều khoản</a>
     </div>
     <div class="col-sm-2 ps-0">
-      <a href="#" class="mb-2 row">Đăng nhập dành cho khách hàng</a>
-      <a href="#" class="mb-2 row">Đăng nhập dành cho Nhà cung cấp</a>
-      <a href="#" class="btn row">Tham gia cùng chúng tôi</a>
+      <a href="#" class="row col-sm-auto mb-2">Đăng nhập dành cho khách hàng</a>
+      <a href="#" class="row col-sm-auto mb-2"
+        >Đăng nhập dành cho Nhà cung cấp</a
+      >
+      <a href="#" class="btn row col-sm-auto mb-2">Tham gia cùng chúng tôi</a>
     </div>
     <div class="col-sm-2 ps-0">
-      <div class="row mb-2"><span>*</span> <b>Hỗ trợ bán hàng</b></div>
-
-      <div class="row mb-2"><span>*</span> <b>Hỗ trợ nhà cung cấp</b></div>
-    </div>
-    <div class="col-sm-3">
-      <div class="row mb-2 row">
-        <b class="tencongty row mb-2 row"
-          >CÔNG TY CỔ PHẦN CÔNG NGHỆ HEALTHCARE NOW</b
-        >
+      <div class="row col-sm-auto mb-2">
+        <span><img src="../assets/img/mail.svg" /></span> <b>Hỗ trợ bán hàng</b>
       </div>
-      <div class="row mb-2 row"><span>*</span> MST: 0109823770</div>
-      <div class="row mb-2 row">
-        <span>*</span> B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q.Hà
-        Đông, TP.Hà Nội
+
+      <div class="row col-sm-auto mb-2">
+        <span><img src="../assets/img/mail.svg" /></span>
+        <b>Hỗ trợ nhà cung cấp</b>
+      </div>
+    </div>
+    <div class="thongtincongty col-sm-3">
+      <div class="tencongty row mb-2 row">
+        <b class="row col-sm-auto">CÔNG TY CỔ PHẦN CÔNG NGHỆ HEALTHCARE NOW</b>
+      </div>
+      <div class="mb-2 d-flex">
+        <span><img src="../assets/img/hash.svg" /></span> MST: 0109823770
+      </div>
+      <div class="mb-2 d-flex">
+        <span><img src="../assets/img/mail.svg" /></span>
+        <div>
+          B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q.Hà Đông, TP.Hà Nội
+        </div>
       </div>
     </div>
   </div>
   <!-- MẠNG XÃ HỘI VÀ ĐĂNG KÝ BẢN QUYỀN  -->
   <div class="mangxahoi row justify-content-center align-items-center">
-    <div class="icon-box col-sm-2 p-0">
-      <a href="#"><img  src="../assets/img/Facebook.png" /></a>
+    <div
+      class="icon-box col-sm-2 p-0 row justify-content-center align-items-center"
+    >
+      <a href="#"><img src="../assets/img/Facebook.png" /></a>
       <a href="#"><img src="../assets/img/YouTube.png" /></a>
       <a href="#"><img src="../assets/img/In.png" /></a>
       <a href="#"><img src="../assets/img/Instagram.png" /></a>

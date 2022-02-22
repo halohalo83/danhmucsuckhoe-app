@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 /* import component css */
-@import url('./assets/css/components/button.css');
-@import url('./assets/css/components/image.css');
-@import url('./assets/css/components/span.css');
-@import url('./assets/css/components/input.css');
-html, body {
+@import url("./assets/css/components/button.css");
+@import url("./assets/css/components/image.css");
+@import url("./assets/css/components/span.css");
+@import url("./assets/css/components/input.css");
+@import url("./assets/css/components/slick-slide.css");
+html,
+body {
   /* width: 1920px;
   height: 3029px; */
 }
@@ -15,24 +17,27 @@ html, body {
   padding: 0;
   box-sizing: border-box;
 }
+a:hover {
+  text-decoration: none;
+}
 /* font face  */
 /* Inter regular */
 @font-face {
   font-family: Inter;
-  src: url('./assets/fonts/Inter/static/Inter-Regular.ttf');
+  src: url("./assets/fonts/Inter/static/Inter-Regular.ttf");
 }
 /* Inter bold */
 @font-face {
   font-family: Inter bold;
-  src: url('./assets/fonts/Inter/static/Inter-Bold.ttf');
+  src: url("./assets/fonts/Inter/static/Inter-Bold.ttf");
 }
 /* Google Sans regular */
 @font-face {
   font-family: Google Sans;
-  src: url('./assets/fonts/GoogleSans/static/OpenSans/OpenSans-Regular.ttf');
+  src: url("./assets/fonts/GoogleSans/static/OpenSans/OpenSans-Regular.ttf");
 }
 /* Google Sans bold */
 @font-face {
   font-family: Google Sans bold;
-  src: url('./assets/fonts/GoogleSans/static/OpenSans/OpenSans-Bold.ttf');
+  src: url("./assets/fonts/GoogleSans/static/OpenSans/OpenSans-Bold.ttf");
 }
