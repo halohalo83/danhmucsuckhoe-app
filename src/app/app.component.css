@@ -98,12 +98,15 @@ header .nav-mobile i {
   z-index: 1001;
   font-size: 28px;
 }
+
 /* main  */
 main {
   padding: 0px;
   margin: 0px;
 }
-
+main .banner {
+  height: 455px;
+}
 main .banner-title {
   position: absolute;
   font-style: normal;

@@ -26,7 +26,11 @@ p {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
+body {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
 a {
   text-decoration: none !important;
   color: unset;

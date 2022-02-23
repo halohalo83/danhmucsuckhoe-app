@@ -1,5 +1,5 @@
 <!-- HEADER DANH MỤC  -->
-<header [ngClass]="{ 'fixed': windowScrolled }">
+<header [ngClass]="{ fixed: windowScrolled }">
   <div class="row inner">
     <div class="header-left col-md-4 col-sm-3 col-6">
       <a href="#" class="header-logo">
@@ -11,35 +11,25 @@
       <div class="row navbar">
         <ul class="row">
           <li class="active">
-              <a href="#danhmuc">
-                  Danh mục
-              </a>
+            <a href="#danhmuc"> Danh mục </a>
           </li>
           <li>
-              <a href="#dichvu">
-                  Nhà cung cấp
-              </a>
+            <a href="#dichvu"> Nhà cung cấp </a>
           </li>
           <li>
-              <a href="#camnhan">
-                  Về chúng tôi
-              </a>
+            <a href="#camnhan"> Về chúng tôi </a>
           </li>
           <li>
-              <a href="#dangky">
-                  Tin tức
-              </a>
+            <a href="#dangky"> Tin tức </a>
           </li>
           <li>
-            <a href="#dangky">
-                Tuyển dụng
-            </a>
-        </li>
-      </ul>
-      <div class="action">
-        <button class="btn register">Đăng ký</button>
-        <button class="btn login">Đăng nhập</button>
-    </div>
+            <a href="#dangky"> Tuyển dụng </a>
+          </li>
+        </ul>
+        <div class="action">
+          <button class="btn register">Đăng ký</button>
+          <button class="btn login">Đăng nhập</button>
+        </div>
       </div>
       <div class="nav-mobile">
         <i class="fa-solid fa-bars"></i>
@@ -51,13 +41,14 @@
 <main class="container-fluid">
   <!-- BANNER MUA SỨC KHỎE MƯỢN HENO -->
   <div class="banner d-flex row justify-content-center align-items-center">
-    <picture>
+    <!-- <picture>
       <source
         media="(max-width: 567px)"
         srcset="../assets/img/group33499-sm.png"
       />
       <img src="../assets/img/group33499.png" />
-    </picture>
+    </picture> -->
+    <div class="main-banner"></div>
   </div>
   <!-- DANH MỤC DỊCH VỤ -->
   <div class="service-menu container-fluid">
@@ -130,14 +121,7 @@
       </div>
     </div>
     <div class="advise-photo col-sm-4">
-      <picture class="asia-girl">
-        <source media="(max-width: 567px)" srcset="none" />
-        <img src="../assets/img/asia-girl.png" />
-      </picture>
-      <picture class="chain">
-        <source media="(max-width: 567px)" srcset="none" />
-        <img src="../assets/img/xich.png" />
-      </picture>
+      <img class="asia-girl" />
     </div>
   </div>
   <!-- HỆ SINH THÁI -->
@@ -153,7 +137,6 @@
 </main>
 <!-- FOOTER DANH MỤC -->
 <footer>
-  <!-- PICTURE HEALTHCARE NOW -->
   <div
     class="footer-picture row justify-content-center align-items-center mb-5"
   >
@@ -225,14 +208,14 @@
       Copyright 2021 Healthcare Now | Đã đăng ký bản quyền
     </div>
   </div>
-  <!--Message -->
-  <button class="text-ring">
-    <a id="text-ring" target="_blank" class="text">
-      <img src="../assets/img/text.png" />
-      <div class="animated host-circle"></div>
-      <div class="animated host-circle-fill"></div>
-    </a>
-  </button>
-  <!-- Back To Top Components -->
-  <app-back-to-top></app-back-to-top>
 </footer>
+<!--Message -->
+<button class="text-ring">
+  <a id="text-ring" target="_blank" class="text">
+    <img src="../assets/img/text.png" />
+    <div class="animated host-circle"></div>
+    <div class="animated host-circle-fill"></div>
+  </a>
+</button>
+<!-- Back To Top Components -->
+<app-back-to-top></app-back-to-top>
