@@ -3,12 +3,14 @@ header {
   background-color: #fff;
   overflow: hidden;
 }
+
 header.fixed {
   position: fixed;
   z-index: 99;
   width: 100%;
   box-shadow: 0 0 6px #333;
 }
+
 header.fixed .inner {
   height: auto;
 }
@@ -17,11 +19,13 @@ header .inner {
   align-items: center;
   height: 133px;
 }
+
 /* HEADER LEFT */
 .header-logo {
   display: flex;
   align-items: center;
 }
+
 .header-logo h6 {
   color: #433f41;
   font-weight: 700;
@@ -29,6 +33,7 @@ header .inner {
   margin-left: 10px;
   text-transform: uppercase;
 }
+
 .header-logo h6 span {
   color: #ee0033;
 }
@@ -51,9 +56,11 @@ header ul li {
   font-weight: 500;
   cursor: pointer;
 }
+
 header ul li:hover {
   color: #ee0033;
 }
+
 header ul li:not(:first-child)::after {
   display: block;
   position: absolute;
@@ -66,6 +73,7 @@ header ul li:not(:first-child)::after {
   transform: translateY(-50%);
   border-radius: 50%;
 }
+
 header .navbar button {
   padding: 10px 20px;
   font-size: 16px;
@@ -99,19 +107,73 @@ header .nav-mobile i {
   font-size: 28px;
 }
 
+header .nav-mobile .wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1000;
+  width: 0;
+  transition: all 0.25s ease-in-out;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 15px 0;
+}
+
+header .nav-mobile .nav_phone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+header .nav-mobile img {
+  max-width: 200px;
+}
+
+header .nav-mobile i {
+  cursor: pointer;
+  z-index: 1001;
+  font-size: 28px;
+}
+
+header .nav-mobile ul {
+  padding: 15px 15px 0;
+}
+
+header .nav-mobile ul li {
+  text-align: left;
+  padding: 0;
+  font-weight: 600;
+}
+
+header .nav-mobile ul li::after {
+  display: none !important;
+}
+
+header .nav-mobile ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 /* main  */
 main {
   padding: 0px;
   margin: 0px;
 }
+
 main .banner {
   height: 455px;
 }
+
 main .banner .main-banner {
-  background: url("../assets/img/group33499.png") no-repeat;
+  background: url("../assets/img/group33499.png") no-repeat center;
   width: 100%;
   height: 100%;
+  background-size: con;
 }
+
 main .banner-title {
   position: absolute;
   font-style: normal;
@@ -124,7 +186,7 @@ main .banner-title {
   text-align: center;
 }
 
-main .banner-title > * {
+main .banner-title>* {
   background: transparent;
 }
 
@@ -136,7 +198,7 @@ main .banner-title b {
   font-weight: 700px;
 }
 
-main .how-it-work > * {
+main .how-it-work>* {
   padding-top: 16px;
   padding-bottom: 16px;
   margin: 0;
@@ -145,12 +207,13 @@ main .how-it-work > * {
 }
 
 main .service-menu {
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
 main .service-menu-title,
 .how-it-work-title {
-  padding: 60px 0px 30px 0px;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 32px;
   line-height: 60px;
@@ -161,7 +224,7 @@ main .service-menu img {
   padding: 0px 8px;
 }
 
-.how-it-work-banner > * {
+.how-it-work-banner>* {
   margin: 8px 16px;
 
   cursor: pointer;
@@ -178,7 +241,7 @@ main .service-menu img {
   margin: 0;
 }
 
-.advise-info > * {
+.advise-info>* {
   background-color: #bf1d24;
 }
 
@@ -190,7 +253,7 @@ main .service-menu img {
   text-align: center;
 }
 
-.advise-info .title > b {
+.advise-info .title>b {
   background-color: #bf1d24;
   text-align: center;
   color: #ffffff;
@@ -242,6 +305,7 @@ main .service-menu img {
 .advise-photo img {
   background: transparent;
 }
+
 .advise-photo .asia-girl {
   background: transparent;
   position: absolute;
@@ -249,6 +313,7 @@ main .service-menu img {
   left: -120px;
   z-index: 2;
 }
+
 .advise-photo .chain {
   background: transparent;
   position: absolute;
@@ -256,6 +321,7 @@ main .service-menu img {
   right: -330px;
   z-index: 1;
 }
+
 /* footer  */
 footer {
   padding-top: 41px;
@@ -279,15 +345,19 @@ footer a {
   color: #ee0033;
   margin-left: 8px;
 }
+
 .contact-info a {
   margin-left: 2px;
 }
+
 .company-info {
   margin-left: 8px;
 }
+
 .support {
   margin-left: 8px;
 }
+
 .social {
   margin-top: 60px;
 }

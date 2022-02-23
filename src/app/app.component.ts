@@ -9,6 +9,8 @@ import { DOCUMENT } from '@angular/common';
   ],
 })
 export class AppComponent {
+  title = 'danhmucsuckhoe-app';
+  showWrapper: boolean = false;
   windowScrolled: boolean = false;
   constructor(@Inject(DOCUMENT) private document: Document) {}
   @HostListener('window:scroll', [])
@@ -31,7 +33,20 @@ export class AppComponent {
       this.windowScrolled = false;
     }
   }
-  title = 'danhmucsuckhoe-app';
+  /**
+   * Hàm click navbar mobile
+   * Author: NATUAN 23/02/2022
+   */
+  onClickWrapper() {
+    this.showWrapper = !this.showWrapper;
+  }
+  /**
+   * Hàm click đóng navbar mobile
+   * Author: NATUAN 23/02/2022
+   */
+  onCloseWrapper() {
+    this.showWrapper = false;
+  }
   // Danh mục slide
   slides = [
     { img: '../assets/img/positive-girl-dentist-1.png' },
@@ -52,7 +67,43 @@ export class AppComponent {
     dots: true,
     responsive: [
       {
-        breakpoint: 567,
+        breakpoint: 1139,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          dots: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          dots: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 575,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

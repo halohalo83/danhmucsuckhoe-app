@@ -11,19 +11,19 @@
       <div class="row navbar">
         <ul class="row">
           <li class="active">
-            <a href="#danhmuc"> Danh mục </a>
+            <a href="#"> Danh mục </a>
           </li>
           <li>
-            <a href="#dichvu"> Nhà cung cấp </a>
+            <a href="#"> Nhà cung cấp </a>
           </li>
           <li>
-            <a href="#camnhan"> Về chúng tôi </a>
+            <a href="#"> Về chúng tôi </a>
           </li>
           <li>
-            <a href="#dangky"> Tin tức </a>
+            <a href="#"> Tin tức </a>
           </li>
           <li>
-            <a href="#dangky"> Tuyển dụng </a>
+            <a href="#"> Tuyển dụng </a>
           </li>
         </ul>
         <div class="action">
@@ -31,8 +31,31 @@
           <button class="btn login">Đăng nhập</button>
         </div>
       </div>
-      <div class="nav-mobile">
-        <i class="fa-solid fa-bars"></i>
+      <div class="nav-mobile" [ngClass]="{ 'wrapper-background': showWrapper }">
+        <i class="fa-solid fa-bars" (click)="onClickWrapper()"></i>
+        <div class="wrapper" [ngClass]="{ 'wrapper-show': showWrapper }">
+          <div class="nav_phone-header">
+            <img src="../assets/img/Logo.png" />
+            <i class="fa-solid fa-xmark" (click)="onCloseWrapper()"></i>
+          </div>
+          <ul>
+            <li class="active">
+              <a href="#"> Danh mục </a>
+            </li>
+            <li>
+              <a href="#"> Nhà cung cấp </a>
+            </li>
+            <li>
+              <a href="#"> Về chúng tôi </a>
+            </li>
+            <li>
+              <a href="#"> Tin tức </a>
+            </li>
+            <li>
+              <a href="#"> Tuyển dụng </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -41,13 +64,6 @@
 <main class="container-fluid">
   <!-- BANNER MUA SỨC KHỎE MƯỢN HENO -->
   <div class="banner d-flex row justify-content-center align-items-center">
-    <!-- <picture>
-      <source
-        media="(max-width: 567px)"
-        srcset="../assets/img/group33499-sm.png"
-      />
-      <img src="../assets/img/group33499.png" />
-    </picture> -->
     <div class="main-banner"></div>
   </div>
   <!-- DANH MỤC DỊCH VỤ -->

@@ -1,0 +1,10 @@
+.wrapper-show {
+  width: 450px !important;
+}
+
+.wrapper-background {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 800;
+  inset: 0px;
+}
