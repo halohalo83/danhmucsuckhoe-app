@@ -6,6 +6,7 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   z-index: 999;
+  background: transparent !important;
 }
 .show-backToTop {
   opacity: 1;

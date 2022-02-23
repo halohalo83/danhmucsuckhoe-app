@@ -50,8 +50,9 @@
         #slickModal="slick-carousel"
         [config]="slideConfig"
         ><div ngxSlickItem *ngFor="let slide of slides" class="slide">
-          <img src="{{ slide.img }}" alt="" width="100%" /></div
-      ></ngx-slick-carousel>
+          <img src="{{ slide.img }}" alt="" width="100%" />
+          </div>
+        </ngx-slick-carousel>
     </div>
   </div>
   <!-- CÁCH THỨC HOẠT ĐỘNG  -->
@@ -66,7 +67,7 @@
     >
       <img src="../assets/img/xetduyet.png" class="banner" />
       <img src="../assets/img/chia.png" class="banner" />
-      <img src="../assets/img/trasau.png" class="banner"/>
+      <img src="../assets/img/trasau.png" class="banner" />
       <img src="../assets/img/phanqua.png" class="banner" />
     </div>
     <div
@@ -160,7 +161,9 @@
       <a href="#" class="row col-sm-auto mb-2"
         >Đăng nhập dành cho Nhà cung cấp</a
       >
-      <a href="#" class="btn row col-sm-auto mb-2">Tham gia cùng chúng tôi</a>
+      <div class="row justify-content-center align-items-center">
+        <a href="#" class="btn row col-sm-auto mb-2">Tham gia cùng chúng tôi</a>
+      </div>
     </div>
     <div class="support col-sm-2 ps-0">
       <div class="row col-sm-auto mb-2">

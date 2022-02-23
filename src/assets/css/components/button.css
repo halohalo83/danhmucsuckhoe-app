@@ -21,6 +21,7 @@
   font-weight: bold;
   line-height: 19px;
   text-decoration: #fff5f5;
+  z-index: 3;
 }
 
 .contact-info .btn {
@@ -31,4 +32,5 @@
 
 .contact-info .btn:hover {
   color: #ffffff;
+  opacity: 0.5;
 }
