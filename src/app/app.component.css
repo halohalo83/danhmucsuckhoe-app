@@ -107,6 +107,11 @@ main {
 main .banner {
   height: 455px;
 }
+main .banner .main-banner {
+  background: url("../assets/img/group33499.png") no-repeat;
+  width: 100%;
+  height: 100%;
+}
 main .banner-title {
   position: absolute;
   font-style: normal;
