@@ -1,27 +1,10 @@
 ngx-slick-carousel img {
   cursor: pointer;
 }
-/* .my-slick-prev {
-  background-image: url(../../img/prev.svg);
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  z-index: 100;
-  width: 42px;
-  height: 42px;
-  border: none;
-}
-.my-slick-next {
-  background-image: url(../../img/next.svg);
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  z-index: 100;
-  width: 42px;
-  height: 42px;
-  border: none;
-} */
 body .slick-prev,
 body .slick-next {
   width: 41px;
   height: 41px;
-  background: #808080;
   opacity: 0.3;
   transform: matrix(1, 0, 0, -1, 0, 0);
   z-index: 100;
@@ -29,33 +12,39 @@ body .slick-next {
   position: absolute;
   top: 33%;
 }
-
-body .slick-prev,
-body .slick-next:hover {
-  background: #808080 !important;
+body .slick-prev::before,
+body .slick-next::before {
+  content: "" !important;
 }
-
-body .slick-prev,
-body .slick-next:active {
-  background: #808080 !important;
+body .slick-prev:hover,
+body .slick-next:hover {
+  opacity: 0.5;
+}
+.slick-prev {
+  background: url(../../img/prev.png) !important;
+  background-color: #808080 !important;
+}
+.slick-next {
+  background: url(../../img/next.png) !important;
+  background-color: #808080 !important;
 }
 
 .slick-list {
   margin: 0px 24px !important;
 }
 
-.slick-dots li button {
-  width: 14px !important;
-  height: 14px !important;
-}
 .slick-dots li {
   margin: 0 !important;
 }
+.slick-dots li button:before {
+  font-size: 14px !important;
+  line-height: 14px !important;
+}
 .slick-dots li.slick-active button:before {
-  color: #EE0033 !important;
+  color: #ee0033 !important;
   opacity: 1 !important;
 }
 
 .slick-dots li button:before {
-  color: #EE0033 !important;
+  color: #ee0033 !important;
 }

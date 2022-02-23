@@ -5,11 +5,13 @@
 @import url("./assets/css/components/span.css");
 @import url("./assets/css/components/input.css");
 @import url("./assets/css/components/slick-slide.css");
-html,
-body {
-  /* width: 1920px;
-  height: 3029px; */
-}
+/* import animation css */
+@import url("./assets/css/animation/animate.css");
+@import url("./assets/css/animation/text-ring.css");
+@import url("./assets/css/animation/reveal.css");
+/* import animation css */
+@import 'animate.css';
+
 * {
   background-color: #ffffff;
   font-family: "Inter";
@@ -17,9 +19,28 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-a:hover {
-  text-decoration: none;
+a {
+  text-decoration: none !important;
+  color: unset;
 }
+a:hover {
+  color: unset;
+}
+img {
+  height: auto;
+  object-fit: cover;
+  border: none;
+}
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+button:focus,
+button:active {
+  outline: none;
+}
+
 /* font face  */
 /* Inter regular */
 @font-face {

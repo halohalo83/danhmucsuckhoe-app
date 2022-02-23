@@ -13,3 +13,22 @@
   color: #ffffff;
   border: 1px solid #EE0033;
 }
+
+.how-it-work .btn {
+  padding: 16px 49px;
+  margin-bottom: 47px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+  text-decoration: #fff5f5;
+}
+
+.contact-info .btn {
+  padding: 12px 8px;
+  margin: 16px 12px;
+  width: auto;
+}
+
+.contact-info .btn:hover {
+  color: #ffffff;
+}

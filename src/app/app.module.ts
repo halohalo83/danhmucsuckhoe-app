@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule, SlickCarouselModule

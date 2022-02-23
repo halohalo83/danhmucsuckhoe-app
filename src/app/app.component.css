@@ -46,7 +46,7 @@ main .banner-title {
   text-align: center;
 }
 
-main .banner-title>* {
+main .banner-title > * {
   background: transparent;
 }
 
@@ -58,7 +58,7 @@ main .banner-title b {
   font-weight: 700px;
 }
 
-main .how-it-work>* {
+main .how-it-work > * {
   padding-top: 16px;
   padding-bottom: 16px;
   margin: 0;
@@ -83,7 +83,7 @@ main .service-menu img {
   padding: 0px 8px;
 }
 
-.how-it-work-banner>* {
+.how-it-work-banner > * {
   margin: 8px 16px;
 
   cursor: pointer;
@@ -93,15 +93,6 @@ main .service-menu img {
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.15);
 }
 
-.how-it-work .btn {
-  padding: 16px 49px;
-  margin-bottom: 47px;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 19px;
-  text-decoration: #fff5f5;
-}
-
 .advise-banner {
   position: relative;
   padding-top: 48px;
@@ -109,7 +100,7 @@ main .service-menu img {
   margin: 0;
 }
 
-.advise-info>* {
+.advise-info > * {
   background-color: #bf1d24;
 }
 
@@ -121,7 +112,7 @@ main .service-menu img {
   text-align: center;
 }
 
-.advise-info .title>b {
+.advise-info .title > b {
   background-color: #bf1d24;
   text-align: center;
   color: #ffffff;
@@ -200,16 +191,6 @@ footer a {
 
 .contact-info {
   font-weight: bold;
-}
-
-.contact-info .btn {
-  padding: 12px 8px;
-  margin: 16px 12px;
-  width: auto;
-}
-
-.contact-info .btn:hover {
-  color: #ffffff;
 }
 
 .contact-info span {
