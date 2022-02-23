@@ -1,29 +1,49 @@
 <!-- HEADER DANH MỤC  -->
-<header>
-  <div class="row justify-content-center align-items-center">
-    <div
-      class="header-picture col-sm-auto d-flex justify-content-center align-items-center"
-    >
-      <picture>
-        <source
-          media="(max-width: 567px)"
-          srcset="../assets/img/Frame51-sm.png"
-        />
-        <img src="../assets/img/Frame51.png" />
-      </picture>
+<header [ngClass]="{ 'fixed': windowScrolled }">
+  <div class="row inner">
+    <div class="header-left col-md-4 col-sm-3 col-6">
+      <a href="#" class="header-logo">
+        <img src="../assets/img/header-icon.png" alt="" />
+        <h6>Healthcare <span>now</span></h6>
+      </a>
     </div>
-    <div class="service-menu col-sm-auto">Danh mục</div>
-    <span class="dot"></span>
-    <div class="service-menu col-sm-auto">Nhà cung cấp</div>
-    <span class="dot"></span>
-    <div class="service-menu col-sm-auto">Về chúng tôi</div>
-    <span class="dot"></span>
-    <div class="service-menu col-sm-auto">Tin tức</div>
-    <span class="dot"></span>
-    <div class="service-menu col-sm-auto">Tuyển dụng</div>
-    <div class="header-button col-sm-2 d-flex">
-      <a href="#" class="btn btn-dangky">Đăng ký</a>
-      <a href="#" class="btn btn-dangnhap">Đăng nhập</a>
+    <div class="header-right col-md-8 col-sm-9 col-6">
+      <div class="row navbar">
+        <ul class="row">
+          <li class="active">
+              <a href="#danhmuc">
+                  Danh mục
+              </a>
+          </li>
+          <li>
+              <a href="#dichvu">
+                  Nhà cung cấp
+              </a>
+          </li>
+          <li>
+              <a href="#camnhan">
+                  Về chúng tôi
+              </a>
+          </li>
+          <li>
+              <a href="#dangky">
+                  Tin tức
+              </a>
+          </li>
+          <li>
+            <a href="#dangky">
+                Tuyển dụng
+            </a>
+        </li>
+      </ul>
+      <div class="action">
+        <button class="btn register">Đăng ký</button>
+        <button class="btn login">Đăng nhập</button>
+    </div>
+      </div>
+      <div class="nav-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
   </div>
 </header>
@@ -51,8 +71,8 @@
         [config]="slideConfig"
         ><div ngxSlickItem *ngFor="let slide of slides" class="slide">
           <img src="{{ slide.img }}" alt="" width="100%" />
-          </div>
-        </ngx-slick-carousel>
+        </div>
+      </ngx-slick-carousel>
     </div>
   </div>
   <!-- CÁCH THỨC HOẠT ĐỘNG  -->

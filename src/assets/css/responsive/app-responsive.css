@@ -1,0 +1,94 @@
+@media screen and (max-width: 1850px) {
+}
+
+@media screen and (max-width: 1800px) {
+}
+
+@media screen and (max-width: 1570px) {
+  header ul li {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .inner {
+    max-width: 1500px;
+  }
+  header .inner {
+    height: 100px;
+  }
+  header ul li {
+    padding: 0 10px;
+  }
+  header .navbar .register {
+    margin-left: 30px;
+  }
+  header ul li:not(:first-child)::after {
+    left: -2px;
+  }
+  .logo h6 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1139px) {
+  header .nav-mobile {
+    display: block;
+    text-align: end;
+  }
+  header .navbar {
+    display: none;
+  }
+  header .inner {
+    justify-content: space-between;
+  }
+  .header-right {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .header-left {
+    flex: 0 0 75%;
+    max-width: fit-content;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 870px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 575px) {
+}
+
+@media screen and (max-width: 500px) {
+  header .inner {
+    height: 70px;
+  }
+  .logo img {
+    max-width: 35px;
+  }
+  .logo h6 {
+    margin-top: 12px;
+    margin-left: 8px;
+    font-size: 16px;
+  }
+  .inner {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}

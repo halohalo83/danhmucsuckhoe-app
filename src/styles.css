@@ -10,37 +10,62 @@
 @import url("./assets/css/animation/text-ring.css");
 @import url("./assets/css/animation/reveal.css");
 /* import animation css */
-@import 'animate.css';
-
-* {
-  background-color: #ffffff;
-  font-family: "Inter";
+@import "animate.css";
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
+
 a {
   text-decoration: none !important;
   color: unset;
+  background-color: transparent;
 }
 a:hover {
   color: unset;
 }
+select,
+option,
+input,
+button {
+  outline: none;
+}
 img {
-  height: auto;
+  max-width: 100%;
   object-fit: cover;
   border: none;
+  height: auto;
 }
-button {
-  border: none;
-  outline: none;
-  background: transparent;
+button,
+a {
+  cursor: pointer;
+  color: unset;
 }
 button:focus,
 button:active {
   outline: none;
 }
+.inner {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
 
+ul,
+li {
+  list-style: none;
+}
 /* font face  */
 /* Inter regular */
 @font-face {

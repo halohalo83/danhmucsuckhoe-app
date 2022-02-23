@@ -1,18 +1,35 @@
-import { Component } from '@angular/core';
-import {NgsRevealConfig} from 'ngx-scrollreveal';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [NgsRevealConfig] // add NgsRevealConfig to the component providers
+  styleUrls: [
+    './app.component.css',
+    '../assets/css/responsive/app-responsive.css',
+  ],
 })
 export class AppComponent {
-  constructor(config: NgsRevealConfig) {
-    // customize default values of ngx-scrollreveal directives used by this component tree
-    config.duration = 5000;
-    config.easing = 'cubic-bezier(0.645, 0.045, 0.355, 1)';
-
-    //other options here
+  windowScrolled: boolean = false;
+  constructor(@Inject(DOCUMENT) private document: Document) {}
+  @HostListener('window:scroll', [])
+  /**
+   * Hàm khởi tạo window scroll
+   * Author: NATUAN 23/02/2022
+   */
+  onWindowScroll() {
+    if (
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop > 100
+    ) {
+      this.windowScrolled = true;
+    } else if (
+      (this.windowScrolled && window.pageYOffset) ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop < 10
+    ) {
+      this.windowScrolled = false;
+    }
   }
   title = 'danhmucsuckhoe-app';
   // Danh mục slide
