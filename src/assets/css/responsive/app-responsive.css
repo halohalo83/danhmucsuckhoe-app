@@ -1,4 +1,7 @@
 @media screen and (max-width: 1850px) {
+  .advise-photo img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1800px) {
@@ -32,7 +35,6 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1320px) {
-
 }
 
 @media screen and (max-width: 1239px) {
@@ -53,6 +55,13 @@
   .header-left {
     flex: 0 0 75%;
     max-width: fit-content;
+  }
+  .how-it-work {
+    padding-bottom: 120px;
+  }
+  .advise-banner {
+    background: #bf1d24 !important;
+    padding-top: 60px;
   }
 }
 
@@ -80,7 +89,10 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 628px) {
+  .advise-info a {
+    min-width: 537px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -92,6 +104,10 @@
   }
   main .service-menu {
     padding: 0px 0px 30px 0px;
+  }
+  .advise-info a {
+    min-width: 256px;
+    max-width: 256px;
   }
 }
 
@@ -117,3 +133,4 @@
 
 @media screen and (max-width: 375px) {
 }
+
