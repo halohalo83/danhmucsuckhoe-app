@@ -10,8 +10,11 @@ import { DOCUMENT } from '@angular/common';
 })
 export class AppComponent {
   title = 'danhmucsuckhoe-app';
-  showWrapper: boolean = false;
-  windowScrolled: boolean = false;
+  showWrapper: boolean = false; // hiển thị navbar mobile
+  windowScrolled: boolean = false; // Màn hiện cuộn
+  countOptions = {
+    separator: '.'
+  }
   constructor(@Inject(DOCUMENT) private document: Document) {}
   @HostListener('window:scroll', [])
   /**
