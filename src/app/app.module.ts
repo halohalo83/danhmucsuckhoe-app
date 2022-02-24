@@ -4,6 +4,7 @@ import {NgsRevealModule} from 'ngx-scrollreveal';
 import { AppComponent } from './app.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
+import { CountUpModule } from 'ngx-countup';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
     BackToTopComponent
   ],
   imports: [
-    BrowserModule, SlickCarouselModule, NgsRevealModule
+    BrowserModule, SlickCarouselModule, NgsRevealModule, CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
