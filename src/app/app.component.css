@@ -1,4 +1,4 @@
-/* header  */
+/************************** HEADER  *******************************/
 header {
   background-color: #fff;
   overflow: hidden;
@@ -21,7 +21,7 @@ header .inner {
   max-width: 1498px;
 }
 
-/* HEADER LEFT */
+/************************** HEADER LEFT *******************************/
 .header-logo {
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@ header .inner {
   color: #ee0033;
 }
 
-/* HEADER RIGHT */
+/************************** HEADER RIGHT *******************************/
 header .navbar {
   font-size: 16px;
   line-height: 20px;
@@ -74,7 +74,7 @@ header ul li:not(:first-child)::after {
   transform: translateY(-50%);
   border-radius: 50%;
 }
-
+/************************** HEADER BUTTON *******************************/
 header .navbar button {
   padding: 10px 20px;
   font-size: 16px;
@@ -96,12 +96,12 @@ header .navbar .login {
   border-color: #ee0033;
 }
 
-/* main  */
+/************************** MAIN  *******************************/
 main {
   padding: 0px;
   margin: 0px;
 }
-
+/************************** HEADER BANNER *******************************/
 main .banner {
   height: 455px;
 }
@@ -111,7 +111,7 @@ main .banner .main-banner {
   width: 100%;
   height: 100%;
 }
-
+/************************** DANH MỤC DỊCH VỤ  *******************************/
 main .service-menu {
   width: 100%;
   padding: 60px 0px;
@@ -128,7 +128,7 @@ main .service-menu h2 {
 main .service-menu img {
   padding: 0px 8px;
 }
-
+/************************** CÁCH THỨC HOẠT ĐỘNG  *******************************/
 main .how-it-work {
   background: #f8f8f8;
   width: 100%;
@@ -166,7 +166,7 @@ main .how-it-work {
   text-align: center;
   color: #000000;
 }
-
+/************************** THÔNG TIN TƯ VẤN  *******************************/
 .advise-banner {
   padding-top: 160px;
   background: url("../assets/img/bgTuvan.png") #f8f8f8 no-repeat center;
@@ -236,7 +236,7 @@ main .how-it-work {
   position: absolute;
   z-index: 2;
 }
-
+/************************** HỆ SINH THÁI  *******************************/
 .ecosystem {
   background: url(../assets/img/ecosystem.png) center bottom no-repeat;
   overflow: hidden;
@@ -268,7 +268,7 @@ main .how-it-work {
   margin-bottom: 86px;
 }
 
-/* footer  */
+/************************** FOOTER  *******************************/
 footer {
   overflow: hidden;
 }

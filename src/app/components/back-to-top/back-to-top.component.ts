@@ -6,7 +6,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./back-to-top.component.css'],
 })
 export class BackToTopComponent implements OnInit {
-  windowScrolled: boolean = false;
+  windowScrolled = false;
   constructor(@Inject(DOCUMENT) private document: Document) {}
   @HostListener('window:scroll', [])
   /**

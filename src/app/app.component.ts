@@ -9,47 +9,13 @@ import { DOCUMENT } from '@angular/common';
   ],
 })
 export class AppComponent {
+  constructor(@Inject(DOCUMENT) private document: Document) {}
   title = 'danhmucsuckhoe-app';
-  showWrapper: boolean = false; // hiển thị navbar mobile
-  windowScrolled: boolean = false; // Màn hiện cuộn
+  showWrapper = false; // hiển thị navbar mobile
+  windowScrolled = false; // Màn hiện cuộn
   // option cho count number
   countOptions = {
     separator: '.'
-  }
-  constructor(@Inject(DOCUMENT) private document: Document) {}
-  @HostListener('window:scroll', [])
-  /**
-   * Hàm khởi tạo window scroll
-   * Author: NATUAN 23/02/2022
-   */
-  onWindowScroll() {
-    if (
-      window.pageYOffset ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop > 100
-    ) {
-      this.windowScrolled = true;
-    } else if (
-      (this.windowScrolled && window.pageYOffset) ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop < 10
-    ) {
-      this.windowScrolled = false;
-    }
-  }
-  /**
-   * Hàm click navbar mobile
-   * Author: NATUAN 23/02/2022
-   */
-  onClickWrapper() {
-    this.showWrapper = !this.showWrapper;
-  }
-  /**
-   * Hàm click đóng navbar mobile
-   * Author: NATUAN 23/02/2022
-   */
-  onCloseWrapper() {
-    this.showWrapper = false;
   }
   // Danh mục slide
   slides = [
@@ -117,4 +83,38 @@ export class AppComponent {
       },
     ],
   };
+  @HostListener('window:scroll', [])
+  /**
+   * Hàm khởi tạo window scroll
+   * Author: NATUAN 23/02/2022
+   */
+  onWindowScroll() {
+    if (
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop > 100
+    ) {
+      this.windowScrolled = true;
+    } else if (
+      (this.windowScrolled && window.pageYOffset) ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop < 10
+    ) {
+      this.windowScrolled = false;
+    }
+  }
+  /**
+   * Hàm click navbar mobile
+   * Author: NATUAN 23/02/2022
+   */
+  onClickWrapper() {
+    this.showWrapper = !this.showWrapper;
+  }
+  /**
+   * Hàm click đóng navbar mobile
+   * Author: NATUAN 23/02/2022
+   */
+  onCloseWrapper() {
+    this.showWrapper = false;
+  }
 }
