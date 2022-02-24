@@ -62,7 +62,7 @@ button:active {
   outline: none;
 }
 .inner {
-  max-width: 1500px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
@@ -70,25 +70,4 @@ button:active {
 ul,
 li {
   list-style: none;
-}
-/* font face  */
-/* Inter regular */
-@font-face {
-  font-family: Inter;
-  src: url("./assets/fonts/Inter/static/Inter-Regular.ttf");
-}
-/* Inter bold */
-@font-face {
-  font-family: Inter bold;
-  src: url("./assets/fonts/Inter/static/Inter-Bold.ttf");
-}
-/* Google Sans regular */
-@font-face {
-  font-family: Google Sans;
-  src: url("./assets/fonts/GoogleSans/static/OpenSans/OpenSans-Regular.ttf");
-}
-/* Google Sans bold */
-@font-face {
-  font-family: Google Sans bold;
-  src: url("./assets/fonts/GoogleSans/static/OpenSans/OpenSans-Bold.ttf");
 }

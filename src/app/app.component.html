@@ -61,19 +61,17 @@
   </div>
 </header>
 <!-- MAIN DANH MỤC -->
-<main class="container-fluid">
+<main>
   <!-- BANNER MUA SỨC KHỎE MƯỢN HENO -->
-  <div class="banner d-flex row justify-content-center align-items-center">
+  <div class="banner">
     <div class="main-banner"></div>
   </div>
   <!-- DANH MỤC DỊCH VỤ -->
-  <div class="service-menu container-fluid">
-    <div class="service-menu-title">DANH MỤC DỊCH VỤ</div>
-    <div
-      class="service-menu-slide row justify-content-center align-items-center"
-    >
+  <div class="service-menu">
+    <h2>DANH MỤC DỊCH VỤ</h2>
+    <div class="inner">
       <ngx-slick-carousel
-        class="carousel col-sm-7"
+        class="carousel"
         #slickModal="slick-carousel"
         [config]="slideConfig"
         ><div ngxSlickItem *ngFor="let slide of slides" class="slide">
@@ -84,145 +82,202 @@
   </div>
   <!-- CÁCH THỨC HOẠT ĐỘNG  -->
   <div class="how-it-work">
-    <div
-      class="how-it-work-title row container-fluid justify-content-center align-items-center"
-    >
-      CÁCH THỨC HOẠT ĐỘNG
+    <h2>CÁCH THỨC HOẠT ĐỘNG</h2>
+    <div class="inner row">
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="hd-i">
+          <a class="hd-img">
+            <img alt="" src="../assets/img/hd1.png" />
+          </a>
+          <p>
+            Chỉ 15ph xét duyệt <br />
+            tự động
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="hd-i">
+          <a class="hd-img">
+            <img alt="" src="../assets/img/hd2.png" />
+          </a>
+          <p>
+            Chia làm 4 lần <br />
+            thanh toán dài hạn
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="hd-i">
+          <a class="hd-img">
+            <img alt="" style="margin-top: 10px" src="../assets/img/hd3.png" />
+          </a>
+          <p>
+            Trả sau 0% hoàn toàn <br />
+            miễn phí
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="hd-i">
+          <a class="hd-img">
+            <img alt="" style="margin-top: 18px" src="../assets/img/hd4.png" />
+          </a>
+          <p>
+            Vô vàn phần quà, <br />
+            ưu đãi hấp dẫn
+          </p>
+        </div>
+      </div>
     </div>
-    <div
-      class="how-it-work-banner row container-fluid justify-content-center align-items-center"
-    >
-      <img src="../assets/img/xetduyet.png" class="banner" />
-      <img src="../assets/img/chia.png" class="banner" />
-      <img src="../assets/img/trasau.png" class="banner" />
-      <img src="../assets/img/phanqua.png" class="banner" />
-    </div>
-    <div
-      class="how-it-work-button row container-fluid justify-content-center align-items-center"
-    >
-      <a href="#" class="btn">TRẢI NGHIỆM NGAY</a>
+    <div class="how-it-work-button">
+      <a href="#" class="btn hover-button">TRẢI NGHIỆM NGAY</a>
     </div>
   </div>
   <!-- THÔNG TIN TƯ VẤN -->
-  <div
-    class="advise-banner row container-fluid justify-content-center align-items-center"
-  >
-    <div class="advise-info col-sm-4">
-      <div class="title row justify-content-center align-items-center">
-        <b
-          >Chăm sóc sức khỏe, sắc đẹp <br />
-          của bạn ngay hôm nay.</b
-        >
-      </div>
-      <div class="title row justify-content-center align-items-center">
-        Hãy để lại liên lạc để chúng tôi tư vấn cho bạn
-      </div>
-      <div class="input-box row justify-content-center align-items-center">
-        <div
-          class="input-col col-sm-auto row justify-content-center align-items-center"
-        >
-          <input type="text" class="input" placeholder="Họ và tên" />
+  <div class="advise-banner">
+    <div class="row inner">
+      <div class="advise-info col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <div class="title row justify-content-center align-items-center">
+          <b
+            >Chăm sóc sức khỏe, sắc đẹp <br />
+            của bạn ngay hôm nay.</b
+          >
+        </div>
+        <div class="title row justify-content-center align-items-center">
+          Hãy để lại liên lạc để chúng tôi tư vấn cho bạn
+        </div>
+        <div class="input-box row justify-content-center align-items-center">
+          <div
+            class="input-col col-sm-auto row justify-content-center align-items-center"
+          >
+            <input type="text" class="input" placeholder="Họ và tên" />
 
-          <input type="text" placeholder="Email(nếu có)" />
+            <input type="text" placeholder="Email(nếu có)" />
+          </div>
+          <div
+            class="input-col col-sm-auto row justify-content-center align-items-center"
+          >
+            <input type="text" placeholder="Số điện thoại" />
+            <input type="text" placeholder="Dịch vụ quan tâm" />
+          </div>
         </div>
-        <div
-          class="input-col col-sm-auto row justify-content-center align-items-center"
-        >
-          <input type="text" placeholder="Số điện thoại" />
-          <input type="text" placeholder="Dịch vụ quan tâm" />
+        <div class="btn-box row justify-content-center align-items-center">
+          <a href="" class="btn col-sm-12">NHẬN TƯ VẤN NGAY</a>
         </div>
       </div>
-      <div class="btn-box row justify-content-center align-items-center">
-        <a href="" class="btn col-sm-12">NHẬN TƯ VẤN NGAY</a>
+      <div class="advise-photo col-sm-6">
+        <img class="asia-girl" />
       </div>
-    </div>
-    <div class="advise-photo col-sm-4">
-      <img class="asia-girl" />
     </div>
   </div>
   <!-- HỆ SINH THÁI -->
-  <div class="eco d-flex row justify-content-center align-items-center">
-    <picture>
-      <source
-        media="(max-width: 567px)"
-        srcset="../assets/img/Hesinhthai-sm.png"
-      />
-      <img src="../assets/img/Hesinhthai.png" />
-    </picture>
+  <div class="ecosystem">
+    <div class="inner row">
+      <div class="title col-sm-12 col-12">Hệ sinh thái Heno</div>
+      <div class="col-lg-3 col-sm-6 col-12" id="count">
+        <img src="../assets/img/khach-hang.png" alt="" />
+        <h6><span class="number-count">10000</span>+</h6>
+        <p>Khách hàng của HENO</p>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12">
+        <img src="../assets/img/giao-dich.png" alt="" />
+        <h6><span class="number-count">1200</span>+</h6>
+        <p>Giao dịch hàng tháng</p>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12">
+        <img src="../assets/img/doi-tac.png" alt="" />
+        <h6><span class="number-count">20</span>+</h6>
+        <p>Đối tác y tế &amp; chăm sóc sức khỏe uy tín</p>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12">
+        <img src="../assets/img/phong-kham.png" alt="" />
+        <h6><span class="number-count">50</span>+</h6>
+        <p>Phòng khám &amp; cơ sở cung cấp dịch vụ trên toàn quốc</p>
+      </div>
+    </div>
   </div>
 </main>
 <!-- FOOTER DANH MỤC -->
-<footer>
-  <div
-    class="footer-picture row justify-content-center align-items-center mb-5"
-  >
-    <picture class="col-sm-3 p-0 row justify-content-center align-items-center">
-      <source
-        media="(max-width: 567px)"
-        srcset="../assets/img/Frame51-sm.png"
-      />
-      <img src="../assets/img/Frame51.png" />
-    </picture>
-    <div class="col-sm-7"></div>
+<footer class="inner row">
+  <div class="col-sm-12 col-12">
+    <a href="/" class="header-logo">
+      <img src="../assets/img/header-icon.png" alt="" />
+      <h6>Healthcare <span> now </span></h6>
+    </a>
   </div>
-  <!-- THÔNG TIN LIÊN HỆ -->
-  <div class="contact-info row justify-content-center">
-    <div class="col-sm-2 ps-0">
-      <a href="#" class="row col-sm-auto mb-2">Khách hàng</a>
-      <a href="#" class="row col-sm-auto mb-2">Đối tác Heno</a>
-      <a href="#" class="row col-sm-auto mb-2">Chính sách quyền riêng tư</a>
-      <a href="#" class="row col-sm-auto mb-2">Về chúng tôi</a>
-      <a href="#" class="row col-sm-auto mb-2">Liên hệ và hỗ trợ</a>
-      <a href="#" class="row col-sm-auto mb-2">Điều kiện & Điều khoản</a>
-    </div>
-    <div class="col-sm-2 ps-0">
-      <a href="#" class="row col-sm-auto mb-2">Đăng nhập dành cho khách hàng</a>
-      <a href="#" class="row col-sm-auto mb-2"
-        >Đăng nhập dành cho Nhà cung cấp</a
+  <ul class="col-lg-3 col-sm-6 col-12 footer-phone">
+    <li class="row">
+      <ul class="col-sm-12 col-6">
+        <li>
+          <a href=""> Khách hàng </a>
+        </li>
+        <li>
+          <a href=""> Đối tác Heno </a>
+        </li>
+        <li>
+          <a href=""> Về chúng tôi </a>
+        </li>
+      </ul>
+      <ul class="col-sm-12 col-6">
+        <li>
+          <a href=""> Liên hệ và hỗ trợ </a>
+        </li>
+        <li>
+          <a href=""> Điều kiện &amp; Điều khoản </a>
+        </li>
+        <li>
+          <a href=""> Chính sánh quyền riêng tư </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="col-lg-3 col-sm-6 col-12">
+    <li>
+      <a href=""> Đăng nhập dành cho Khách hàng </a>
+    </li>
+    <li>
+      <a href=""> Đăng nhập dành cho Nhà cung cấp </a>
+    </li>
+    <li><a href=""> </a><a href="" class="btn">Tham gia cùng chúng tôi</a></li>
+  </ul>
+  <ul class="col-lg-2 col-sm-6 col-12 support">
+    <li>
+      <p>Hỗ trợ bán hàng</p>
+      <span>support@heno.vn</span>
+    </li>
+    <li>
+      <p>Hỗ trợ nhà cung cấp</p>
+      <span>support@heno.vn</span>
+    </li>
+  </ul>
+  <div class="col-lg-4 col-sm-6 col-12 info">
+    <h3>Công ty cổ phần công nghệ HealthCare Now</h3>
+    <h6># MST: 0109823770</h6>
+    <p>
+      <i class="fa-solid fa-location-dot"></i>
+      <span
+        >B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q. Hà Đông, TP.Hà
+        Nội</span
       >
-      <div class="row justify-content-center align-items-center">
-        <a href="#" class="btn row col-sm-auto mb-2">Tham gia cùng chúng tôi</a>
-      </div>
-    </div>
-    <div class="support col-sm-2 ps-0">
-      <div class="row col-sm-auto mb-2">
-        <span><img src="../assets/img/mail.svg" /></span> <b>Hỗ trợ bán hàng</b>
-      </div>
-
-      <div class="row col-sm-auto mb-2">
-        <span><img src="../assets/img/mail.svg" /></span>
-        <b>Hỗ trợ nhà cung cấp</b>
-      </div>
-    </div>
-    <div class="company-info col-sm-3">
-      <div class="company-name row mb-2 row">
-        <b class="row col-sm-auto">CÔNG TY CỔ PHẦN CÔNG NGHỆ HEALTHCARE NOW</b>
-      </div>
-      <div class="mb-2 d-flex">
-        <span><img src="../assets/img/hash.svg" /></span> MST: 0109823770
-      </div>
-      <div class="mb-2 d-flex">
-        <span><img src="../assets/img/mail.svg" /></span>
-        <div>
-          B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q.Hà Đông, TP.Hà Nội
-        </div>
-      </div>
-    </div>
+    </p>
   </div>
-  <!-- MẠNG XÃ HỘI VÀ ĐĂNG KÝ BẢN QUYỀN  -->
-  <div class="social row justify-content-center align-items-center">
-    <div
-      class="icon-box col-sm-2 p-0 row justify-content-center align-items-center"
-    >
-      <a href="#"><img src="../assets/img/Facebook.png" /></a>
-      <a href="#"><img src="../assets/img/YouTube.png" /></a>
-      <a href="#"><img src="../assets/img/In.png" /></a>
-      <a href="#"><img src="../assets/img/Instagram.png" /></a>
-    </div>
-    <div class="col-sm-4"></div>
-    <div class="license col-sm-3">
-      Copyright 2021 Healthcare Now | Đã đăng ký bản quyền
-    </div>
+
+  <div class="col-sm-12 col-12 social">
+    <a href="">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  <div class="col-sm-12 col-12 desc-footer">
+    <p>Copyright 2021 Healthcare Now | Đã đăng ký bản quyền</p>
   </div>
 </footer>
 <!--Message -->

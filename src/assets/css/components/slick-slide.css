@@ -10,7 +10,7 @@ body .slick-next {
   z-index: 100;
   border-radius: 50%;
   position: absolute;
-  top: 33%;
+  top: 40%;
 }
 body .slick-prev::before,
 body .slick-next::before {
@@ -31,6 +31,10 @@ body .slick-next:hover {
 
 .slick-list {
   margin: 0px 24px !important;
+}
+
+.slick-dots {
+  bottom: -45px !important;
 }
 
 .slick-dots li {
