@@ -12,6 +12,7 @@ export class AppComponent {
   title = 'danhmucsuckhoe-app';
   showWrapper: boolean = false; // hiển thị navbar mobile
   windowScrolled: boolean = false; // Màn hiện cuộn
+  // option cho count number
   countOptions = {
     separator: '.'
   }
