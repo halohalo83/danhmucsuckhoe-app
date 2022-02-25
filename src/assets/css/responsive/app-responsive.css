@@ -66,13 +66,19 @@
   }
 }
 
-@media screen and (max-width: 1139px) {
+@media screen and (max-width: 1158px) {
+  .how-it-work .hd-i {
+    max-height: 249px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 991px) {
+  .how-it-work .hd-i {
+    min-height: 300px;
+  }
 }
 
 @media screen and (max-width: 870px) {
@@ -87,6 +93,12 @@
 
   footer .social {
     margin: 16px 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .how-it-work .hd-i {
+    min-height: 385px;
   }
 }
 
