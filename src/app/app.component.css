@@ -9,6 +9,7 @@ header.fixed {
   z-index: 99;
   width: 100%;
   box-shadow: 0 0 6px #333;
+  padding: 8px 0px;
 }
 
 header.fixed .inner {
@@ -348,15 +349,15 @@ footer .desc-footer p {
 }
 
 .fa-facebook:hover {
-  color: #4267b2;
+  color: #4267b2 !important;
 }
 
 .fa-youtube:hover {
-  color: #ff0000;
+  color: #ff0000 !important;
 }
 
 .fa-linkedin:hover {
-  color: #2867b2;
+  color: #2867b2 !important;
 }
 
 .fa-instagram:hover {
