@@ -6,8 +6,11 @@
 
 .ico-locate {
   background: url("../../icon/map-pin.svg") no-repeat;
-  height: 24px;
-  width: 24px;
+}
+
+.ico-email {
+  background: url("../../icon/mail.svg") no-repeat;
+  padding: 0px 13px 15px 8px;
 }
 
 .fas,

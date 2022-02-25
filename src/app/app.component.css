@@ -317,6 +317,8 @@ footer ul.support li p {
   min-width: 177px;
 }
 footer ul.support li span {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
