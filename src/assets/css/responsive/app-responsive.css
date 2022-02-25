@@ -98,13 +98,13 @@
 
 @media screen and (max-width: 750px) {
   .how-it-work .hd-i {
-    min-height: 385px;
+    min-height: 360px;
   }
 }
 
 @media screen and (max-width: 628px) {
-  .advise-info a {
-    min-width: 537px;
+  .how-it-work .hd-i {
+    min-height: 395px;
   }
 }
 
@@ -125,6 +125,12 @@
   .advise-info a {
     min-width: 256px;
     max-width: 256px;
+  }
+  .advise-info a {
+    min-width: 200px;
+  }
+  .how-it-work .hd-i {
+    min-height: 263px;
   }
 }
 
