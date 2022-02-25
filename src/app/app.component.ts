@@ -15,7 +15,8 @@ export class AppComponent {
   windowScrolled = false; // Màn hiện cuộn
   // option cho count number
   countOptions = {
-    separator: '.'
+    separator: '.',
+    duration: 5,
   }
   // Danh mục slide
   slides = [
