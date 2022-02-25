@@ -2,10 +2,12 @@
 /* import component css */
 @import url("./assets/css/components/button.css");
 @import url("./assets/css/components/image.css");
+@import url("./assets/css/components/icon.css");
 @import url("./assets/css/components/span.css");
 @import url("./assets/css/components/input.css");
 @import url("./assets/css/components/slick-slide.css");
 @import url("./assets/css/components/navbar-mobile.css");
+
 /* import animation css */
 @import url("./assets/css/animation/animate.css");
 @import url("./assets/css/animation/text-ring.css");

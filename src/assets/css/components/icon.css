@@ -1,0 +1,17 @@
+.ico-hash {
+  background: url("../../icon/hash.svg") no-repeat;
+  height: 24px;
+  width: 24px;
+}
+
+.ico-locate {
+  background: url("../../icon/map-pin.svg") no-repeat;
+  height: 24px;
+  width: 24px;
+}
+
+.fas,
+.fa-solid {
+  padding: 0px 13px 0 3px;
+  font-size: 21px;
+}
